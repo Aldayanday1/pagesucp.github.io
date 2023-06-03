@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+    bottom: 0;
+}
+
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+
+
+.logo {
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 10%;
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: #359381;
+    color: #fff;
+}
+
+
+.header-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+    font-size: 5.5em;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.header-1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.header-2 {
+    position: relative;
+    background: #003329;
+    height: auto;
+
+}
+.name-time {
+    font-size: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -250px;
+}
+.caraousel {
+    position: relative;
+    background: #003329;
+    height: auto;
+    padding: 7%;
+    margin-top: -3%;
+    margin-bottom: -0px;
+}
+
+.footer {
+    position: relative;
+}
+
+
+.name-time li {
+    padding: 40px;
+    margin-right: 14%;
+    list-style-type: none;
+}
+
+.name-time .nama {
+    margin: 0 auto;
+}
+
+.datetime {
+    color: #fff;
+    background: #003329;
+    background-color: #003329;
+    width: 380px;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+
+.datetime .date {
+    font-size: 17px;
+}
+
+.time {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child){
+    position: relative;
+    margin: 0 6px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: -10px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time span:last-child {
+    background: #359381;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+.footer-2003 {
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.galery {
+    background-color:#003329;
+    padding: 2%;
+    display: flex;
+}
+
+.row {
+    text-align: center;
+    justify-content: center;
+}
+
+.img-container {
+    position: relative;
+}
+
+.image .card-img-top {
+    transition: .5s ease;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    transition: .5 ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-container:hover .card-img-top {
+    opacity: 0.2;
+    
+}
+
+.img-container:hover .overlay {
+    opacity: 1;   
+    
+}
+
+.card {
+    position: relative;
+    z-index: 0;
+    transition: 0.2s all;
+}
+
+.card:hover {
+    z-index: 1;
+    box-shadow: 0 8px 50px rgb(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
